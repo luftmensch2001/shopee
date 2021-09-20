@@ -1,4 +1,35 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* Trick */
+    font-size: 62.5%;
+    /* => 1rem = 10px */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    /* device w<1200px => 100% */
+    max-width: 100%;
+    /* auto center item */
+    margin: 0 auto; 
+}
+
+.grid-full-width {
+    width: 100%
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
 }
