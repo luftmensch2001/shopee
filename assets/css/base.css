@@ -17,6 +17,10 @@ html {
     box-sizing: border-box;
 }
 
+.no-hover {
+    opacity: 1 !important;
+}
+
 .grid {
     width: 1200px;
     /* device w<1200px => 100% */
